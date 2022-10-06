@@ -1,12 +1,7 @@
-def digital_root(n):
-    sum = 0
-    n = str(n)
-    if len(n)>1:
-        for i in range(len(n)):
-            sum += int(n[i])
-        sum = str(sum)
+def validate_pin(pin: str):
+    if pin[0] == "-":
+        pin = pin[1::]
+    if pin.isdigit() and pin !="-" and  len(pin) == 4 or len(pin) == 6:
+        return True
     else:
-         sum = int(n)
-    return sum
-    if len(sum) > 1:
-        digital_root(sum)
+        return False
