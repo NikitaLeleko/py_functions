@@ -7,7 +7,6 @@ def digital_root(n):
         sum = str(sum)
     else:
          sum = int(n)
-    print(sum)
+    return sum
     if len(sum) > 1:
         digital_root(sum)
-digital_root(29)
