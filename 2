@@ -4,5 +4,4 @@ def square_digits(number: int):
     for i in range(len(number)):
         result += str(int(number[i])**2)
     result = int(result)
-    print(result)
-square_digits(92)
+    return result
