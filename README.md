@@ -4,3 +4,4 @@
 3) xo_counter
 4) validate_pin
 5) open_or_senior
+6) transposing_matrix
