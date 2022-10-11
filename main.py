@@ -1,12 +1,8 @@
-def digital_root(n):
-    sum = 0
-    n = str(n)
-    if len(n)>1:
-        for i in range(len(n)):
-            sum += int(n[i])
-        sum = str(sum)
-    else:
-         sum = int(n)
-    return sum
-    if len(sum) > 1:
-        digital_root(sum)
+def transposing_matrix(lst: list):
+    result = []
+    for i in range(len(lst[0])):
+        bufflist = []
+        for j in range(len(lst)):
+            bufflist.append(lst[j][i])
+        result.append(bufflist)
+    return result
